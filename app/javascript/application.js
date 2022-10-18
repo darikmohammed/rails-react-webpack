@@ -3,9 +3,16 @@ import "@hotwired/turbo-rails";
 import "./controllers";
 import React from "react";
 import ReactDOM from "react-dom";
+import Greeting from "./Greeting";
+import Testing from "./components/Testing";
 
 function App() {
-  return <h1>Hello World!</h1>;
+  return (
+    <div>
+      <Testing />
+      <Greeting />
+    </div>
+  );
 }
 
 ReactDOM.render(<App />, document.getElementById("root"));

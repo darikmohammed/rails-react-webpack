@@ -4,14 +4,18 @@ import "./controllers";
 import React from "react";
 import ReactDOM from "react-dom";
 import Greeting from "./Greeting";
-import Testing from "./components/Testing";
+import { Provider } from "react-redux";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import store from "./Redux/configureStore";
 
 function App() {
   return (
-    <div>
-      <Testing />
-      <Greeting />
-    </div>
+    <Provider store={store}>
+      <div>
+        <Greeting />
+      </div>
+    </Provider>
   );
 }
 

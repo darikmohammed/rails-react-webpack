@@ -6,7 +6,7 @@
 
 ## Built With
 
-- Ruby on Rails 
+- Ruby on Rails
 - React
 - Webpack
 

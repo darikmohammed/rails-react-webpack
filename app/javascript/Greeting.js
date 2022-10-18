@@ -5,7 +5,6 @@ import getGreeting from "./Redux/Greeting/GetGreeting";
 function Greeting() {
   const dispatch = useDispatch();
   const message = useSelector((state) => state.Greeting);
-  console.log(message.message.message);
   useEffect(() => {
     dispatch(getGreeting());
   }, []);
